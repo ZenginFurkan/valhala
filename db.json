@@ -1,0 +1,770 @@
+{
+  "customers": [
+    {
+      "id": "1c71a4c8-5d77-4f38-a1c4-1eae8f6568e2",
+      "firstName": "John",
+      "lastName": "Doe",
+      "tckn": "1a2b3c4d5e6",
+      "membershipDate": "2019-01-12",
+      "phone": "123-456-7890",
+      "email": "john.doe@example.com",
+      "vehicleCount": 2,
+      "licensePlate": "ABC1234",
+      "created_at": "2020-05-21T08:30:00.000Z",
+      "updated_at": "2023-05-21T08:30:00.000Z"
+    },
+    {
+      "id": "2c71a4c8-5d77-4f38-a1c4-1eae8f6568e3",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "tckn": "2b3c4d5e6f7",
+      "membershipDate": "2018-02-15",
+      "phone": "234-567-8901",
+      "email": "jane.doe@example.com",
+      "vehicleCount": 1,
+      "licensePlate": "DEF5678",
+      "created_at": "2021-06-22T09:31:00.000Z",
+      "updated_at": "2023-06-22T09:31:00.000Z"
+    },
+    {
+      "id": "3c71a4c8-5d77-4f38-a1c4-1eae8f6568e4",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "tckn": "3c4d5e6f7g8",
+      "membershipDate": "2020-03-18",
+      "phone": "345-678-9012",
+      "email": "alice.smith@example.com",
+      "vehicleCount": 3,
+      "licensePlate": "GHI9012",
+      "created_at": "2019-07-23T10:32:00.000Z",
+      "updated_at": "2023-07-23T10:32:00.000Z"
+    },
+    {
+      "id": "4c71a4c8-5d77-4f38-a1c4-1eae8f6568e5",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "tckn": "4d5e6f7g8h9",
+      "membershipDate": "2021-04-21",
+      "phone": "456-789-0123",
+      "email": "bob.johnson@example.com",
+      "vehicleCount": 4,
+      "licensePlate": "JKL3456",
+      "created_at": "2022-08-24T11:33:00.000Z",
+      "updated_at": "2023-08-24T11:33:00.000Z"
+    },
+    {
+      "id": "5c71a4c8-5d77-4f38-a1c4-1eae8f6568e6",
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "tckn": "5e6f7g8h9i0",
+      "membershipDate": "2017-05-24",
+      "phone": "567-890-1234",
+      "email": "charlie.brown@example.com",
+      "vehicleCount": 2,
+      "licensePlate": "MNO7890",
+      "created_at": "2023-09-25T12:34:00.000Z",
+      "updated_at": "2023-09-25T12:34:00.000Z"
+    },
+    {
+      "id": "6c71a4c8-5d77-4f38-a1c4-1eae8f6568e7",
+      "firstName": "Diana",
+      "lastName": "Prince",
+      "tckn": "6f7g8h9i0j1",
+      "membershipDate": "2016-06-26",
+      "phone": "678-901-2345",
+      "email": "diana.prince@example.com",
+      "vehicleCount": 5,
+      "licensePlate": "PQR2345",
+      "created_at": "2024-01-26T13:35:00.000Z",
+      "updated_at": "2024-01-26T13:35:00.000Z"
+    },
+    {
+      "id": "7c71a4c8-5d77-4f38-a1c4-1eae8f6568e8",
+      "firstName": "Clark",
+      "lastName": "Kent",
+      "tckn": "7g8h9i0j1k2",
+      "membershipDate": "2015-07-28",
+      "phone": "789-012-3456",
+      "email": "clark.kent@example.com",
+      "vehicleCount": 1,
+      "licensePlate": "STU5678",
+      "created_at": "2024-02-27T14:36:00.000Z",
+      "updated_at": "2024-02-27T14:36:00.000Z"
+    },
+    {
+      "id": "8c71a4c8-5d77-4f38-a1c4-1eae8f6568e9",
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "tckn": "8h9i0j1k2l3",
+      "membershipDate": "2014-08-29",
+      "phone": "890-123-4567",
+      "email": "bruce.wayne@example.com",
+      "vehicleCount": 3,
+      "licensePlate": "VWX8901",
+      "created_at": "2024-03-28T15:37:00.000Z",
+      "updated_at": "2024-03-28T15:37:00.000Z"
+    },
+    {
+      "id": "9c71a4c8-5d77-4f38-a1c4-1eae8f6568e10",
+      "firstName": "Peter",
+      "lastName": "Parker",
+      "tckn": "9i0j1k2l3m4",
+      "membershipDate": "2013-09-30",
+      "phone": "901-234-5678",
+      "email": "peter.parker@example.com",
+      "vehicleCount": 2,
+      "licensePlate": "YZA1234",
+      "created_at": "2024-04-29T16:38:00.000Z",
+      "updated_at": "2024-04-29T16:38:00.000Z"
+    },
+    {
+      "id": "10c71a4c8-5d77-4f38-a1c4-1eae8f6568e11",
+      "firstName": "Tony",
+      "lastName": "Stark",
+      "tckn": "0j1k2l3m4n5",
+      "membershipDate": "2012-10-31",
+      "phone": "012-345-6789",
+      "email": "tony.stark@example.com",
+      "vehicleCount": 6,
+      "licensePlate": "BCD5678",
+      "created_at": "2024-05-30T17:39:00.000Z",
+      "updated_at": "2024-05-30T17:39:00.000Z"
+    },
+    {
+      "id": "11c71a4c8-5d77-4f38-a1c4-1eae8f6568e12",
+      "firstName": "Natasha",
+      "lastName": "Romanoff",
+      "tckn": "1k2l3m4n5o6",
+      "membershipDate": "2011-11-01",
+      "phone": "123-456-7891",
+      "email": "natasha.romanoff@example.com",
+      "vehicleCount": 2,
+      "licensePlate": "EFG8901",
+      "created_at": "2024-06-01T18:40:00.000Z",
+      "updated_at": "2024-06-01T18:40:00.000Z"
+    },
+    {
+      "id": "12c71a4c8-5d77-4f38-a1c4-1eae8f6568e13",
+      "firstName": "Steve",
+      "lastName": "Rogers",
+      "tckn": "2l3m4n5o6p7",
+      "membershipDate": "2010-12-02",
+      "phone": "234-567-8902",
+      "email": "steve.rogers@example.com",
+      "vehicleCount": 3,
+      "licensePlate": "HIJ1234",
+      "created_at": "2024-07-02T19:41:00.000Z",
+      "updated_at": "2024-07-02T19:41:00.000Z"
+    },
+    {
+      "id": "13c71a4c8-5d77-4f38-a1c4-1eae8f6568e14",
+      "firstName": "Barry",
+      "lastName": "Allen",
+      "tckn": "3m4n5o6p7q8",
+      "membershipDate": "2009-01-03",
+      "phone": "345-678-9013",
+      "email": "barry.allen@example.com",
+      "vehicleCount": 4,
+      "licensePlate": "KLM4567",
+      "created_at": "2024-08-03T20:42:00.000Z",
+      "updated_at": "2024-08-03T20:42:00.000Z"
+    },
+    {
+      "id": "14c71a4c8-5d77-4f38-a1c4-1eae8f6568e15",
+      "firstName": "Diana",
+      "lastName": "Lance",
+      "tckn": "4n5o6p7q8r9",
+      "membershipDate": "2008-02-04",
+      "phone": "456-789-0124",
+      "email": "diana.lance@example.com",
+      "vehicleCount": 5,
+      "licensePlate": "NOP7890",
+      "created_at": "2024-09-04T21:43:00.000Z",
+      "updated_at": "2024-09-04T21:43:00.000Z"
+    },
+    {
+      "id": "15c71a4c8-5d77-4f38-a1c4-1eae8f6568e16",
+      "firstName": "Hal",
+      "lastName": "Jordan",
+      "tckn": "5o6p7q8r9s0",
+      "membershipDate": "2007-03-05",
+      "phone": "567-890-1235",
+      "email": "hal.jordan@example.com",
+      "vehicleCount": 1,
+      "licensePlate": "QRS9012",
+      "created_at": "2024-10-05T22:44:00.000Z",
+      "updated_at": "2024-10-05T22:44:00.000Z"
+    },
+    {
+      "id": "16c71a4c8-5d77-4f38-a1c4-1eae8f6568e17",
+      "firstName": "Arthur",
+      "lastName": "Curry",
+      "tckn": "6p7q8r9s0t1",
+      "membershipDate": "2006-04-06",
+      "phone": "678-901-2346",
+      "email": "arthur.curry@example.com",
+      "vehicleCount": 2,
+      "licensePlate": "TUV3456",
+      "created_at": "2024-11-06T23:45:00.000Z",
+      "updated_at": "2024-11-06T23:45:00.000Z"
+    },
+    {
+      "id": "17c71a4c8-5d77-4f38-a1c4-1eae8f6568e18",
+      "firstName": "Victor",
+      "lastName": "Stone",
+      "tckn": "7q8r9s0t1u2",
+      "membershipDate": "2005-05-07",
+      "phone": "789-012-3457",
+      "email": "victor.stone@example.com",
+      "vehicleCount": 3,
+      "licensePlate": "WXY6789",
+      "created_at": "2024-12-07T00:46:00.000Z",
+      "updated_at": "2024-12-07T00:46:00.000Z"
+    },
+    {
+      "id": "18c71a4c8-5d77-4f38-a1c4-1eae8f6568e19",
+      "firstName": "Oliver",
+      "lastName": "Queen",
+      "tckn": "8r9s0t1u2v3",
+      "membershipDate": "2004-06-08",
+      "phone": "890-123-4568",
+      "email": "oliver.queen@example.com",
+      "vehicleCount": 4,
+      "licensePlate": "ZAB1234",
+      "created_at": "2024-01-08T01:47:00.000Z",
+      "updated_at": "2024-01-08T01:47:00.000Z"
+    },
+    {
+      "id": "19c71a4c8-5d77-4f38-a1c4-1eae8f6568e20",
+      "firstName": "Selina",
+      "lastName": "Kyle",
+      "tckn": "9s0t1u2v3w4",
+      "membershipDate": "2003-07-09",
+      "phone": "901-234-5679",
+      "email": "selina.kyle@example.com",
+      "vehicleCount": 1,
+      "licensePlate": "CDE4567",
+      "created_at": "2024-02-09T02:48:00.000Z",
+      "updated_at": "2024-02-09T02:48:00.000Z"
+    },
+    {
+      "id": "20c71a4c8-5d77-4f38-a1c4-1eae8f6568e21",
+      "firstName": "Kara",
+      "lastName": "Zor-El",
+      "tckn": "0t1u2v3w4x5",
+      "membershipDate": "2002-08-10",
+      "phone": "012-345-6780",
+      "email": "kara.zor-el@example.com",
+      "vehicleCount": 5,
+      "licensePlate": "FGH7890",
+      "created_at": "2024-03-10T03:49:00.000Z",
+      "updated_at": "2024-03-10T03:49:00.000Z"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "firmaAdi": "Volkswagen",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "6.00 $",
+      "dcBirimFiyat": "2.00 $"
+    },
+    {
+      "id": "2",
+      "firmaAdi": "Toyota",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "5.50 $",
+      "dcBirimFiyat": "2.50 $"
+    },
+    {
+      "id": "3",
+      "firmaAdi": "Ford",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "7.00 $",
+      "dcBirimFiyat": "3.00 $"
+    },
+    {
+      "id": "4",
+      "firmaAdi": "Honda",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "6.50 $",
+      "dcBirimFiyat": "2.75 $"
+    },
+    {
+      "id": "5",
+      "firmaAdi": "BMW",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "8.00 $",
+      "dcBirimFiyat": "3.50 $"
+    },
+    {
+      "id": "6",
+      "firmaAdi": "Mercedes-Benz",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "9.00 $",
+      "dcBirimFiyat": "4.00 $"
+    },
+    {
+      "id": "7",
+      "firmaAdi": "Audi",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "8.50 $",
+      "dcBirimFiyat": "3.75 $"
+    },
+    {
+      "id": "8",
+      "firmaAdi": "Chevrolet",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "6.00 $",
+      "dcBirimFiyat": "2.25 $"
+    },
+    {
+      "id": "9",
+      "firmaAdi": "Kia",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "5.75 $",
+      "dcBirimFiyat": "2.50 $"
+    },
+    {
+      "id": "10",
+      "firmaAdi": "Hyundai",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "6.25 $",
+      "dcBirimFiyat": "2.75 $"
+    },
+    {
+      "id": "11",
+      "firmaAdi": "Nissan",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "5.00 $",
+      "dcBirimFiyat": "2.00 $"
+    },
+    {
+      "id": "12",
+      "firmaAdi": "Mazda",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "6.75 $",
+      "dcBirimFiyat": "2.50 $"
+    },
+    {
+      "id": "13",
+      "firmaAdi": "Subaru",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "7.25 $",
+      "dcBirimFiyat": "3.00 $"
+    },
+    {
+      "id": "14",
+      "firmaAdi": "Jaguar",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "9.50 $",
+      "dcBirimFiyat": "4.25 $"
+    },
+    {
+      "id": "15",
+      "firmaAdi": "Lexus",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "8.75 $",
+      "dcBirimFiyat": "3.75 $"
+    },
+    {
+      "id": "16",
+      "firmaAdi": "Tesla",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "10.00 $",
+      "dcBirimFiyat": "4.50 $"
+    },
+    {
+      "id": "17",
+      "firmaAdi": "Volvo",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "8.00 $",
+      "dcBirimFiyat": "3.50 $"
+    },
+    {
+      "id": "18",
+      "firmaAdi": "Ferrari",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "12.00 $",
+      "dcBirimFiyat": "5.00 $"
+    },
+    {
+      "id": "19",
+      "firmaAdi": "Porsche",
+      "anlaşmaDurumu": "Anlaşmalı",
+      "acBirimFiyat": "11.50 $",
+      "dcBirimFiyat": "4.75 $"
+    },
+    {
+      "id": "20",
+      "firmaAdi": "Mitsubishi",
+      "anlaşmaDurumu": "Anlaşmasız",
+      "acBirimFiyat": "5.25 $",
+      "dcBirimFiyat": "2.25 $"
+    }
+  ],
+  "cars":[
+    {
+      "id": "1",
+      "marka": "Abarth",
+      "model": "500e",
+      "bataryaKapasitesi": "42kWh",
+      "soketType": "CSS/CHAdeMO"
+    },
+    {
+      "id": "2",
+      "marka": "Alfa Romeo",
+      "model": "Giulia",
+      "bataryaKapasitesi": "50kWh",
+      "soketType": "Type 2"
+    },
+    {
+      "id": "3",
+      "marka": "Audi",
+      "model": "e-tron",
+      "bataryaKapasitesi": "95kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "4",
+      "marka": "BMW",
+      "model": "i3",
+      "bataryaKapasitesi": "42.2kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "5",
+      "marka": "Chevrolet",
+      "model": "Bolt EV",
+      "bataryaKapasitesi": "66kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "6",
+      "marka": "Fiat",
+      "model": "500 Electric",
+      "bataryaKapasitesi": "24kWh",
+      "soketType": "Type 2"
+    },
+    {
+      "id": "7",
+      "marka": "Ford",
+      "model": "Mustang Mach-E",
+      "bataryaKapasitesi": "68kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "8",
+      "marka": "Honda",
+      "model": "e",
+      "bataryaKapasitesi": "35.5kWh",
+      "soketType": "Type 2"
+    },
+    {
+      "id": "9",
+      "marka": "Hyundai",
+      "model": "Kona Electric",
+      "bataryaKapasitesi": "64kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "10",
+      "marka": "Jaguar",
+      "model": "I-PACE",
+      "bataryaKapasitesi": "90kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "11",
+      "marka": "Kia",
+      "model": "Soul EV",
+      "bataryaKapasitesi": "64kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "12",
+      "marka": "Mercedes-Benz",
+      "model": "EQC",
+      "bataryaKapasitesi": "80kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "13",
+      "marka": "Nissan",
+      "model": "Leaf",
+      "bataryaKapasitesi": "40kWh",
+      "soketType": "CHAdeMO"
+    },
+    {
+      "id": "14",
+      "marka": "Peugeot",
+      "model": "e-208",
+      "bataryaKapasitesi": "50kWh",
+      "soketType": "Type 2"
+    },
+    {
+      "id": "15",
+      "marka": "Renault",
+      "model": "Zoe",
+      "bataryaKapasitesi": "52kWh",
+      "soketType": "Type 2"
+    },
+    {
+      "id": "16",
+      "marka": "Tesla",
+      "model": "Model 3",
+      "bataryaKapasitesi": "60kWh",
+      "soketType": "Tesla Supercharger"
+    },
+    {
+      "id": "17",
+      "marka": "Toyota",
+      "model": "Prius Prime",
+      "bataryaKapasitesi": "8.8kWh",
+      "soketType": "Type 2"
+    },
+    {
+      "id": "18",
+      "marka": "Volkswagen",
+      "model": "ID.4",
+      "bataryaKapasitesi": "77kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "19",
+      "marka": "Volvo",
+      "model": "XC40 Recharge",
+      "bataryaKapasitesi": "78kWh",
+      "soketType": "CCS"
+    },
+    {
+      "id": "20",
+      "marka": "Porsche",
+      "model": "Taycan",
+      "bataryaKapasitesi": "93.4kWh",
+      "soketType": "CCS"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "islemNo":"12345",
+      "tarih": "08.04.1993",
+      "saat": "13.00-21.00",
+      "durum": "Başarısız",
+      "tuketilenEnerji": "90.22 kWh",
+      "kullaniciTCKN": "34744339096",
+      "istasyon": "Kısakürek A.Ş.",
+      "plaka": "53 ELB 061"
+    },
+    {
+      "id": "2",
+      "islemNo":"12345",
+      "tarih": "07.11.2023",
+      "saat": "9.00-21.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "73.87 kWh",
+      "kullaniciTCKN": "54741131668",
+      "istasyon": "İhsanoğlu Şti.",
+      "plaka": "01 LN 271"
+    },
+    {
+      "id": "3",
+      "islemNo":"12345",
+      "tarih": "02.03.2017",
+      "saat": "9.00-23.00",
+      "durum": "Başarısız",
+      "tuketilenEnerji": "83.35 kWh",
+      "kullaniciTCKN": "21089125558",
+      "istasyon": "Migros",
+      "plaka": "58 IR 424"
+    },
+    {
+      "id": "4",
+      "islemNo":"12345",
+      "tarih": "02.09.1975",
+      "saat": "11.00-20.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "88.07 kWh",
+      "kullaniciTCKN": "86754395760",
+      "istasyon": "Masomo",
+      "plaka": "68 HRN 48"
+    },
+    {
+      "id": "5",
+      "islemNo":"12345",
+      "tarih": "16.11.2006",
+      "saat": "14.00-23.00",
+      "durum": "Devam",
+      "tuketilenEnerji": "89.24 kWh",
+      "kullaniciTCKN": "99239609221",
+      "istasyon": "Şensoy Yıldırım Şti.",
+      "plaka": "69 Z 5031"
+    },
+    {
+      "id": "6",
+      "islemNo":"12345",
+      "tarih": "22.10.2009",
+      "saat": "18.00-19.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "66.39 kWh",
+      "kullaniciTCKN": "57293194505",
+      "istasyon": "Havelsan",
+      "plaka": "64 ULP 22"
+    },
+    {
+      "id": "7",
+      "islemNo":"12345",
+      "tarih": "01.03.1985",
+      "saat": "11.00-21.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "53.23 kWh",
+      "kullaniciTCKN": "69721407163",
+      "istasyon": "Ergül İhsanoğlu Şti.",
+      "plaka": "34 P 9254"
+    },
+    {
+      "id": "8",
+      "islemNo":"12345",
+      "tarih": "29.01.2000",
+      "saat": "10.00-23.00",
+      "durum": "Başarısız",
+      "tuketilenEnerji": "38.46 kWh",
+      "kullaniciTCKN": "81983432569",
+      "istasyon": "Türk Durdu Şti.",
+      "plaka": "41 MZC 971"
+    },
+    {
+      "id": "9",
+      "islemNo":"12345",
+      "tarih": "25.07.2018",
+      "saat": "14.00-20.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "32.4 kWh",
+      "kullaniciTCKN": "39822011545",
+      "istasyon": "Aselsan",
+      "plaka": "33 PO 5490"
+    },
+    {
+      "id": "10",
+      "islemNo":"12345",
+      "tarih": "20.02.2022",
+      "saat": "16.00-19.00",
+      "durum": "Devam",
+      "tuketilenEnerji": "28.55 kWh",
+      "kullaniciTCKN": "56046554864",
+      "istasyon": "İmamoğlu Şirketler Grubu",
+      "plaka": "26 AOC 82"
+    },
+    {
+      "id": "11",
+      "islemNo":"12345",
+      "tarih": "21.12.2008",
+      "saat": "11.00-23.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "37.74 kWh",
+      "kullaniciTCKN": "69480839399",
+      "istasyon": "Korutürk Korutürk Ltd.",
+      "plaka": "40 AD 5097"
+    },
+    {
+      "id": "12",
+      "islemNo":"12345",
+      "tarih": "31.10.2016",
+      "saat": "13.00-20.00",
+      "durum": "Başarısız",
+      "tuketilenEnerji": "90.6 kWh",
+      "kullaniciTCKN": "46717928352",
+      "istasyon": "Bilir Yorulmaz Şti.",
+      "plaka": "47 DEZ 39"
+    },
+    {
+      "id": "13",
+      "islemNo":"12345",
+      "tarih": "13.03.2005",
+      "saat": "9.00-22.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "33.42 kWh",
+      "kullaniciTCKN": "25620885219",
+      "istasyon": "Çetin Aslan A.Ş.",
+      "plaka": "20 ELU 854"
+    },
+    {
+      "id": "14",
+      "islemNo":"12345",
+      "tarih": "29.04.2010",
+      "saat": "16.00-22.00",
+      "durum": "Devam",
+      "tuketilenEnerji": "16.3 kWh",
+      "kullaniciTCKN": "34158881503",
+      "istasyon": "A101 Yeni Mağzacılık",
+      "plaka": "18 OBC 740"
+    },
+    {
+      "id": "15",
+      "islemNo":"12345",
+      "tarih": "11.01.2019",
+      "saat": "14.00-22.00",
+      "durum": "Devam",
+      "tuketilenEnerji": "29.04 kWh",
+      "kullaniciTCKN": "60256337800",
+      "istasyon": "Akça Karadeniz Şti.",
+      "plaka": "09 RE 2793"
+    },
+    {
+      "id": "16",
+      "islemNo":"12345",
+      "tarih": "18.09.2003",
+      "saat": "15.00-20.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "83.51 kWh",
+      "kullaniciTCKN": "89285166241",
+      "istasyon": "İhsanoğlu Akgündüz A.Ş.",
+      "plaka": "14 IOB 72"
+    },
+    {
+      "id": "17",
+      "islemNo":"12345",
+      "tarih": "17.12.1997",
+      "saat": "14.00-21.00",
+      "durum": "Tamamlandı",
+      "tuketilenEnerji": "34.43 kWh",
+      "kullaniciTCKN": "99228220688",
+      "istasyon": "Yaman A.Ş.",
+      "plaka": "81 ZTF 683"
+    },
+    {
+      "id": "18",
+      "islemNo":"12345",
+      "tarih": "14.03.1977",
+      "saat": "12.00-20.00",
+      "durum": "Başarısız",
+      "tuketilenEnerji": "87.75 kWh",
+      "kullaniciTCKN": "97992996235",
+      "istasyon": "Durdu Ertaş Şti.",
+      "plaka": "16 RL 4047"
+    },
+    {
+      "id": "19",
+      "islemNo":"12345",
+      "tarih": "17.03.1979",
+      "saat": "13.00-20.00",
+      "durum": "Başarısız",
+      "tuketilenEnerji": "53.61 kWh",
+      "kullaniciTCKN": "20466199142",
+      "istasyon": "Bilge Ltd.",
+      "plaka": "28 C 7831"
+    },
+    {
+      "id": "20",
+      "islemNo":"12345",  
+      "tarih": "14.12.2011",
+      "saat": "16.00-21.00",
+      "durum": "Devam",
+      "tuketilenEnerji": "30.71 kWh",
+      "kullaniciTCKN": "52582867744",
+      "istasyon": "Ford Otosan",
+      "plaka": "23 IE 8678"
+    }
+  ]
+}
