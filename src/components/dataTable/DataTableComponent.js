@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import WhiteButton from "../buttons/WhiteButton";
-import "../../index.css";
 import UsersModal from "../modals/UsersModal";
+import CarsModal from "../modals/CarsModal";
+import CompaniesModal from "../modals/CompaniesModal";
 import { Button } from "primereact/button";
 import { Checkbox } from "@mui/material";
-import CarsModal from "../modals/CarsModal";
+import "../../index.css";
+import { toggleUserModal } from "../../service/Utilities";
 
 const DataTableComponent = ({
   columns,
@@ -16,48 +18,53 @@ const DataTableComponent = ({
   onExport,
   customActions,
   isAddOpen = false,
-  pageType,
 }) => {
-  const [globalFilter, setGlobalFilter] = useState("");
-  const [isUserModalOpen, setIsUserModalOpen] = useState(false);
-  const [isCarsModalOpen, setIsCarsModalOpen] = useState(false);
-
-  const toggleUserModal = () => {
-    setIsUserModalOpen(!isUserModalOpen);
-  };
-
-  const toggleCarsModal = () => {
-    setIsCarsModalOpen(!isCarsModalOpen);
+  const [globalFilter, setGlobalFilter] = useState("3");
+  const [modals, setModals] = useState({
+    users: false,
+    cars: false,
+    companies: false,
+  });
+  toggleUserModal(globalFilter, modals);
+  const toggleModal = (type) => {
+    setModals((prevModals) => ({ ...prevModals, [type]: !prevModals[type] }));
   };
 
   const handleGlobalFilterChange = (e) => {
-    setGlobalFilter(e.target.value);
-    if (onFilter) onFilter(e.target.value);
+    const value = e.target.value;
+    setGlobalFilter(value);
+    if (onFilter) onFilter(value);
   };
 
   const editButtonTemplate = () => {
+    const pageUrl = window.location.pathname;
+
+    const getModalType = () => {
+      if (pageUrl.includes("users")) return "users";
+      if (pageUrl.includes("cars")) return "cars";
+      if (pageUrl.includes("companies")) return "companies";
+    };
+
     return (
       <Button
         variant="light"
         className="p-button-rounded p-button-outlined editButtonTemplate"
-        onClick={pageType === "users" ? toggleUserModal : toggleCarsModal}
+        onClick={() => toggleModal(getModalType())}
       >
         <i className="pi pi-pencil" style={{ fontSize: "1rem" }}></i>
       </Button>
     );
   };
 
-  const verifiedBodyTemplate = (rowData) => {
-    return (
-      <Checkbox
-        checked={rowData.verified}
-        onChange={() => handleVerifyChange(rowData)}
-      />
-    );
-  };
+  const verifiedBodyTemplate = (rowData) => (
+    <Checkbox
+      checked={rowData.verified}
+      onChange={() => handleVerifyChange(rowData)}
+    />
+  );
 
   const handleVerifyChange = (rowData) => {
-    // Implement your logic to handle verification change
+    // Verification status change logic
     console.log(`Verification status changed for ${rowData.firstName}`);
   };
 
@@ -71,7 +78,7 @@ const DataTableComponent = ({
 
   return (
     <>
-      <div className="card m-4 ">
+      <div className="card m-4">
         <div className="d-flex justify-content-between align-items-center mb-3 p-3">
           <div className="search-container">
             <input
@@ -79,7 +86,7 @@ const DataTableComponent = ({
               className="form-control"
               placeholder="Ara..."
               value={globalFilter}
-              onChange={(e) => setGlobalFilter(e.target.value)}
+              onChange={handleGlobalFilterChange}
               style={{ maxWidth: "300px" }}
             />
           </div>
@@ -116,7 +123,7 @@ const DataTableComponent = ({
           rows={10}
           rowsPerPageOptions={[5, 10, 25, 50]}
           tableStyle={{ minWidth: "50rem" }}
-          globalFilter={globalFilterKey ? globalFilterKey : globalFilter}
+          globalFilter={globalFilterKey || globalFilter}
           className="custom-datatable"
         >
           <Column
@@ -141,11 +148,9 @@ const DataTableComponent = ({
           />
         </DataTable>
       </div>
-      {pageType === "users" ? (
-        <UsersModal isOpen={isUserModalOpen} toggle={toggleUserModal} />
-      ) : (
-        <CarsModal isOpen={isCarsModalOpen} toggle={toggleCarsModal} />
-      )}
+      <UsersModal isOpen={modals.users} toggle={() => toggleModal("users")} />
+      <CarsModal isOpen={modals.cars} toggle={() => toggleModal("cars")} />
+      <CompaniesModal isOpen={modals.companies} toggle={() => toggleModal("companies")} />
     </>
   );
 };

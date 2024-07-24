@@ -133,3 +133,19 @@
   color: #9E9E9E;
   border: none;
 }
+.modal-body {
+  background-color: none !important;
+  padding: 0 !important;
+
+}
+
+.cars-form{
+   width: 900px;
+   height: 300px;
+   border-radius: 10px; 
+}
+
+.modal-content{
+  margin: 5 !important;
+  background: none !important;
+}
